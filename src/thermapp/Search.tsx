@@ -11,9 +11,7 @@ const Search = () => {
 
   return (
     <div>
-      <input onChange={() => {
-          
-      }}>{search}</input>
+      <input onChange={() => {}}>{search}</input>
     </div>
   );
 };
