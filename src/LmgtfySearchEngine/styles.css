@@ -1,0 +1,14 @@
+.lmgtfy h1 {
+    font-size: 5vw;
+}
+
+.lmgtfy .user-input {
+    height: 1.5vw;
+    width: 30vw;
+    margin: 1vw;
+}
+
+.lmgtfy a {
+    font-size: 8vw;
+    text-decoration: none;
+}
