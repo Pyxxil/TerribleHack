@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import ThermApp from "./thermapp";
 import isInternetWorking from "./isInternetWorking";
-
+import publicAge from "./publicAge";
 import "./App.css";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <Router>
         <Route path="/thermapp" component={ThermApp} />
         <Route path="/isInternetWorking" component={isInternetWorking} />
+        <Route path="/publicAge" component={publicAge} />
       </Router>
     </div>
   );
