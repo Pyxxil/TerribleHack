@@ -1,9 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Home from "./HomePage"
-import ThermApp from "./thermapp";
-
+import Home from "./HomePage";
+import ThermAp from "./thermap";
 import LazySearch from "./lazysearch";
 import isInternetWorking from "./isInternetWorking";
 import StressRelief from "./StressRelief";
@@ -19,14 +18,14 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/" exact component={Home} />
-        <Route path="/thermapp" component={ThermApp} />
-
-        <Route path="/hydraPage" render={() => window.location.href = "/hydra_page.html"} />
-        <Route path="/sypmtoms" render={() => window.location.href = "/SymptomsLetGo/index.html"} />
-
+        <Route path="/thermap" component={ThermAp} />
         <Route
-          path="/hydra_page"
+          path="/hydraPage"
           render={() => (window.location.href = "/hydra_page.html")}
+        />
+        <Route
+          path="/sypmtoms"
+          render={() => (window.location.href = "/SymptomsLetGo/index.html")}
         />
         <Route path="/lazysearch" component={LazySearch} />
         <Route path="/isInternetWorking" component={isInternetWorking} />

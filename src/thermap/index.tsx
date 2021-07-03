@@ -19,8 +19,6 @@ const ThermApp = (props: GeolocatedProps) => {
     return () => clearInterval(interval);
   });
 
-  console.debug(audioSource);
-
   return (
     <>
       <Search
