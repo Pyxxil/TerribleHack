@@ -4,9 +4,10 @@ import "./styles.css";
 const Search = () => {
   const [link, setLink] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+
   const GenerateLink = () => {
-    var userInput = document.getElementById("search") as HTMLInputElement;
-    var userInputStr = userInput.value.toString();
+    const userInput = document.getElementById("search") as HTMLInputElement;
+    const userInputStr = userInput.value.toString();
     if (userInputStr != "") {
       var encodedInput = encodeURIComponent(userInputStr);
       setLink("https://lmgtfy.app/?q=" + encodedInput);

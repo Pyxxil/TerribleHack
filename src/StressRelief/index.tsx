@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./index.css";
 
 const StressRelief = () => {
-  var [people, setPeople] = useState([
+  const [people, setPeople] = useState([
     "Antonio Arellano",
     "Karla Wyatt",
     "Wade Heath",
@@ -14,9 +14,10 @@ const StressRelief = () => {
     "Muriel Wilson",
   ]);
 
-  function fireSomeone() {
+  const fireSomeone = () => {
     const index = Math.floor(Math.random() * people.length);
     const unlucky_person = people.splice(index, 1)[0];
+
     const element = document.getElementById("fired");
     if (element) {
       if (unlucky_person) {
@@ -25,8 +26,9 @@ const StressRelief = () => {
         element.innerText = "You just fired yourself!";
       }
     }
+
     setPeople([...people]);
-  }
+  };
 
   return (
     <div className="stress-relief">

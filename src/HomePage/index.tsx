@@ -26,19 +26,19 @@ const HomePage = () => {
     "/EmailLecturer",
     "/publicAge",
     "/rubberducky",
-    "/howdoispell"
+    "/howdoispell",
   ];
 
-  function getColour() {
+  const getColour = () => {
     const colour = colours[index];
     index = (index + 1) % colours.length;
     return colour;
-  }
+  };
 
-  function getRandomUrl() {
+  const getRandomUrl = () => {
     const url = urls[Math.floor(Math.random() * urls.length)];
     return url;
-  }
+  };
 
   return (
     <div className="home-page">
@@ -63,21 +63,39 @@ const HomePage = () => {
           </p>
         </div>
 
-      <h2>"That's a terrible idea... Do it."</h2>
-      <Link to={getRandomUrl()}>
-        <div className="stupid-button">Take me to something <del>dumb</del> genius</div>
-      </Link>
-      <br />
-      
-      <Card link="/isInternetWorking" title="Is your internet working?" colour={getColour()} />
-      <Card link="/thermap" title="Thermap" colour={getColour()} />
-      <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
-      <Card link="/StressRelief" title="Stress Relief" colour={getColour()} />
-      <Card link="/hydra_page" title="Hydra" colour={getColour()} />
-      <Card link="/EmailLecturer" title="Email Lecturer Ditching" colour={getColour()} />
-      <Card link="/publicAge" title="Public Age Calculator" colour={getColour()} />
-      <Card link="/rubberducky" title="Rubber Duck Debugging" colour={getColour()} />
-      <Card link="/howdoispell" title="Learn to Spell" colour={getColour()} />
+        <h2>"That's a terrible idea... Do it."</h2>
+        <Link to={getRandomUrl()}>
+          <div className="stupid-button">
+            Take me to something <del>dumb</del> genius
+          </div>
+        </Link>
+        <br />
+
+        <Card
+          link="/isInternetWorking"
+          title="Is your internet working?"
+          colour={getColour()}
+        />
+        <Card link="/thermap" title="Thermap" colour={getColour()} />
+        <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
+        <Card link="/StressRelief" title="Stress Relief" colour={getColour()} />
+        <Card link="/hydra_page" title="Hydra" colour={getColour()} />
+        <Card
+          link="/EmailLecturer"
+          title="Email Lecturer Ditching"
+          colour={getColour()}
+        />
+        <Card
+          link="/publicAge"
+          title="Public Age Calculator"
+          colour={getColour()}
+        />
+        <Card
+          link="/rubberducky"
+          title="Rubber Duck Debugging"
+          colour={getColour()}
+        />
+        <Card link="/howdoispell" title="Learn to Spell" colour={getColour()} />
       </div>
     </div>
   );
