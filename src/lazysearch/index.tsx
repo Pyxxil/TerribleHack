@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Search from "./search";
 
 const LMGTFY = () => {
-    console.log("here")
   return (
     <div>
         <Search />
