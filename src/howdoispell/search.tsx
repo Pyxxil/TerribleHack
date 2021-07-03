@@ -11,10 +11,10 @@ const Search = () => {
 
     const handleSubmit = event => {
       if (word in myData) {
-        document.getElementById("status").innerHTML = "<p>Your word is spelt correctly</p>"
+        document.getElementById("status").innerHTML = "<p>eeah, it's correct</p>"
         }
       else {
-        document.getElementById("status").innerHTML = "<p>Your word is not spelt correctly</p>"
+        document.getElementById("status").innerHTML = "<p>Word does not exist</p>"
       }
         event.preventDefault();
       };
