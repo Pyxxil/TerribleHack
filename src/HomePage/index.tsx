@@ -21,7 +21,12 @@ const HomePage = () => {
     "/isInternetWorking",
     "/thermapp",
     "/lazysearch",
-    "/StressRelief"
+    "/StressRelief",
+    "/hydra_page",
+    "/EmailLecturer",
+    "/publicAge",
+    "/rubberducky",
+    "/howdoispell"
   ]
 
   function getColour() {
@@ -59,6 +64,11 @@ const HomePage = () => {
       <Card link="/thermapp" title="Thermapp" colour={getColour()} />
       <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
       <Card link="/StressRelief" title="Stress Relief" colour={getColour()} />
+      <Card link="/hydra_page" title="Hydra" colour={getColour()} />
+      <Card link="/EmailLecturer" title="Email Lecturer Ditching" colour={getColour()} />
+      <Card link="/publicAge" title="Public Age Calculator" colour={getColour()} />
+      <Card link="/rubberducky" title="Rubber Duck Debugging" colour={getColour()} />
+      <Card link="/howdoispell" title="Learn to Spell" colour={getColour()} />
     </div>
 
   </div>;
