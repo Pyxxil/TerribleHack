@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import Home from "./HomePage"
 import ThermApp from "./thermapp";
 
 import LazySearch from "./lazysearch";
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Route path="/" exact component={Home} />
         <Route path="/thermapp" component={ThermApp} />
         <Route
           path="/hydra_page"
