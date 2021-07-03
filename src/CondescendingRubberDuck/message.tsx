@@ -4,21 +4,21 @@ import "./styles.css";
 const Search = () => {
   const [message, setMessage] = useState("YOU STUPID PERSON");
   const [isLoading, setIsLoading] = useState(true);
-
-  var timer: any;
+  const [timer, setTimer] = useState(-1);
 
   const StartDebugging = () => {
-    timer = setInterval(RandomMessage, 2000);
+    if (timer !== -1) clearInterval(timer);
+    setTimer(setInterval(RandomMessage, 2000));
     setIsLoading(false);
   };
 
   const StopDebugging = () => {
-    clearInterval(timer);
+    if (timer !== -1) clearInterval(timer);
     setIsLoading(true);
   };
 
   const RandomMessage = () => {
-    var messages: Array<string> = [
+    var messages: string[] = [
       "That's not how you do it",
       "You're doing it wrong",
       "Just do it correctly",
