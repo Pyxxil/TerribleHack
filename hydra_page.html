@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background: #080d1a;
+        }
+        img{
+            height: 100%;            
+            margin-left:25%;
+        }
+    </style>
+<script>
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'hidden') {
+    document.getElementById('spawner').click();
+   
+  }
+});
+</script>
+</head>
+<body>
+    <a  target="_blank" href="http://localhost:3000/hydra_page.html">
+        <button style="visibility: hidden;" id="spawner"></button>    
+    </a>
+
+    <img src="https://image.shutterstock.com/image-vector/hydra-logo-mascot-vector-illustration-600w-1649035477.jpg" alt="hydra babyyyyyyy">
+
+
+</body>
+</html>
