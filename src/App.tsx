@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import ThermApp from "./thermapp";
-import LmgtfySearchEngine from "./LmgtfySearchEngine";
+import LazySearch from "./lazysearch";
 
 import "./App.css";
 
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/thermapp" component={ThermApp} />
-        <Route path="/lmgtfy-search-engine" component={LmgtfySearchEngine} />
+        <Route path="/lazysearch" component={LazySearch} />
       </Router>
     </div>
   );

@@ -5,10 +5,16 @@
 .lmgtfy .user-input {
     height: 1.5vw;
     width: 30vw;
-    margin: 1vw;
+    margin: 2vw 1vw 10vw auto;
 }
 
 .lmgtfy a {
     font-size: 8vw;
     text-decoration: none;
+}
+
+.lmgtfy button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
