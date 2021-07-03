@@ -6,6 +6,7 @@ import ThermApp from "./thermapp";
 import LazySearch from "./lazysearch";
 import isInternetWorking from "./isInternetWorking";
 import StressRelief from "./StressRelief";
+import howDoISpell from "./howdoispell";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/lazysearch" component={LazySearch} />
         <Route path="/isInternetWorking" component={isInternetWorking} />
         <Route path="/StressRelief" component={StressRelief} />
+        <Route path="/howdoispell" component={howDoISpell} />
       </Router>
     </div>
   );
