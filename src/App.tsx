@@ -12,7 +12,8 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/thermapp" component={ThermApp} />
-        <Route path="/hydra_page" render={() => window.location.href = "/hydra_page.html"} />
+        <Route path="/hydraPage" render={() => window.location.href = "/hydra_page.html"} />
+        <Route path="/sypmtoms" render={() => window.location.href = "/SymptomsLetGo/index.html"} />
       </Router>
     </div>
   );
