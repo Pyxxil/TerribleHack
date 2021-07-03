@@ -1,55 +1,55 @@
 .ducky img {
-    padding: 10vw 1vw 1vw 8vw;
-    width: 45vw;
-    float: left;
+  padding: 10vw 1vw 1vw 8vw;
+  width: 45vw;
+  float: left;
 }
 
-.ducky .message{
-    height: 50vh;
-    padding: 3vw;
+.ducky .message {
+  height: 50vh;
+  padding: 3vw;
 }
 
 .ducky button {
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 25px;
-    padding: 1vw;
-    margin-bottom: 2vw;
-    color: white;
-    cursor: pointer;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 1vw;
+  margin-bottom: 2vw;
+  color: white;
+  cursor: pointer;
 }
 
 .ducky .start-debug {
-    background-color: green;
+  background-color: green;
 }
 
 .ducky .stop-debug {
-    background-color: red;
+  background-color: red;
 }
 
 .ducky .speech-bubble {
-	position: relative;
-	background: #00ccff;
-    border-radius: .4em;
-    width: 40vw;
-    float: right;
-    margin-top: 5vw;
-    margin-right: 5vw;
-    min-height: 50vh;
+  position: relative;
+  background: #00ccff;
+  border-radius: 0.4em;
+  width: 40vw;
+  float: right;
+  margin-top: 5vw;
+  margin-right: 5vw;
+  min-height: 50vh;
 }
 
 .ducky .speech-bubble:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-right-color: #00aabb;
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -10px;
-	margin-left: -20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #00aabb;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-left: -20px;
 }
