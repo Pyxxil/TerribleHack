@@ -4,8 +4,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import ThermApp from "./thermapp";
 import isInternetWorking from "./isInternetWorking";
 import StressRelief from "./StressRelief";
+import CondescendingRubberDuck from "./CondescendingRubberDuck";
 
 import "./App.css";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/thermapp" component={ThermApp} />
         <Route path="/isInternetWorking" component={isInternetWorking} />
         <Route path="/StressRelief" component={StressRelief} />
+        <Route path="/rubberducky" component={CondescendingRubberDuck} />
       </Router>
     </div>
   );
