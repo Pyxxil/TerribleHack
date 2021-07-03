@@ -7,7 +7,6 @@ import Search from "./Search";
 
 const ThermApp = (props: GeolocatedProps) => {
   const [destination, setDestination] = useState(null);
-  const [warmth, setWarmth] = useState("Neutral");
   const [audioSource, setAudioSource] = useState(Warmer);
 
   useEffect(() => {

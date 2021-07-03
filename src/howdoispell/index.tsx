@@ -1,8 +1,8 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Search from "./search";
 
 const howDoISpell = () => {
-    return (
+  return (
     <div className="howDoISpell">
       <Search />
     </div>
