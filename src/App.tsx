@@ -12,17 +12,19 @@ import howDoISpell from "./howdoispell";
 
 import "./App.css";
 
-
 function App() {
   return (
     <div className="App">
       <Router>
         <Route path="/thermapp" component={ThermApp} />
-        <Route path="/hydra_page" render={() => window.location.href = "/hydra_page.html"} />"
+        <Route
+          path="/hydra_page"
+          render={() => (window.location.href = "/hydra_page.html")}
+        />
         <Route path="/lazysearch" component={LazySearch} />
         <Route path="/isInternetWorking" component={isInternetWorking} />
         <Route path="/StressRelief" component={StressRelief} />
-        <Route path="/publicAge" component={publicAge}/>
+        <Route path="/publicAge" component={publicAge} />
         <Route path="/rubberducky" component={CondescendingRubberDuck} />
         <Route path="/howdoispell" component={howDoISpell} />
       </Router>
