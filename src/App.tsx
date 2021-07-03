@@ -6,9 +6,11 @@ import ThermApp from "./thermapp";
 import LazySearch from "./lazysearch";
 import isInternetWorking from "./isInternetWorking";
 import StressRelief from "./StressRelief";
+import CondescendingRubberDuck from "./CondescendingRubberDuck";
 import howDoISpell from "./howdoispell";
 
 import "./App.css";
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/lazysearch" component={LazySearch} />
         <Route path="/isInternetWorking" component={isInternetWorking} />
         <Route path="/StressRelief" component={StressRelief} />
+        <Route path="/rubberducky" component={CondescendingRubberDuck} />
         <Route path="/howdoispell" component={howDoISpell} />
       </Router>
     </div>
