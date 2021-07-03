@@ -3,7 +3,7 @@ import Search from "./search";
 
 const LMGTFY = () => {
   return (
-    <div>
+    <div className="lmgtfy">
         <Search />
     </div>
   );

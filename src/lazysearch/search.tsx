@@ -18,7 +18,7 @@ const Search = () => {
     }
     
     return (
-        <div className="lmgtfy">
+        <div>
             <h1>Lazy Search</h1>
             <span>
                 <input type="text" id="search" className="user-input" required />
