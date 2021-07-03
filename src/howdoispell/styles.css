@@ -1,0 +1,34 @@
+.howDoISpell {
+  height: 100vh;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.howDoISpell h1 {
+  font-size: 5vw;
+  margin: 0;
+  padding: 2vw;
+}
+
+.howDoISpell .user-input {
+  height: 1.5vw;
+  width: 30vw;
+  margin: 2vw 1vw 1vw auto;
+}
+
+.howDoISpell button {
+  background-color: #000000;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 1vw;
+  margin-bottom: 2vw;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.howDoISpell .spelling p {
+  font-size: 5vw;
+}
