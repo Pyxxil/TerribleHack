@@ -9,7 +9,7 @@ const measureRoute = async (
   to: { lat: number; lon: number }
 ): Promise<number> => {
   const resp = await fetch(
-    `http://open.mapquestapi.com/directions/v2/route?key=${API_KEY}&from=${from.coords.latitude},${from.coords.longitude}&to=${to.lat},${to.lon}`
+    `https://open.mapquestapi.com/directions/v2/route?key=${API_KEY}&from=${from.coords.latitude},${from.coords.longitude}&to=${to.lat},${to.lon}`
   );
   const json = await resp.json();
   const distance = json.route?.legs?.[0].distance ?? -1;
@@ -33,6 +33,9 @@ const ThermApp = () => {
         if (position && destination) {
           const dist = await measureRoute(position, destination as any);
           setDistance(dist);
+
+          if (distance === -1) return;
+
           if (dist < distance) setWarmth("Warmer");
           else if (dist === distance) setWarmth("Neutral");
           else setWarmth("Colder");
@@ -53,6 +56,7 @@ const ThermApp = () => {
 
   useEffect(() => {
     setWarmth("Neutral");
+    setDistance(-1);
   }, [destination]);
 
   console.debug(location, distance, destination);

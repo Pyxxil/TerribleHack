@@ -13,7 +13,7 @@ const Search: React.FC<SearchProps> = (props) => {
 
   useEffect(() => {
     fetch(
-      `http://open.mapquestapi.com/nominatim/v1/search.php?key=${API_KEY}&format=json&q=${search}`
+      `https://open.mapquestapi.com/nominatim/v1/search.php?key=${API_KEY}&format=json&q=${search}`
     ).then((resp) => {
       resp.json().then((json) => setFound(json));
     });
