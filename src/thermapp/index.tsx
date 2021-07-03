@@ -25,8 +25,6 @@ const ThermApp = (props: GeolocatedProps) => {
   const [warmth, setWarmth] = useState("Neutral");
   const [distance, setDistance] = useState(0);
 
-  console.debug(props);
-
   useEffect(() => {
     setWarmth("Neutral");
     if (destination && props.coords) {
