@@ -4,6 +4,7 @@ import Teapot from "./teapot.png";
 import Card from "./Card";
 
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const colours=[
@@ -16,10 +17,24 @@ const HomePage = () => {
   ]
   let index = 0;
 
+  const urls = [
+    "/isInternetWorking",
+    "/thermapp",
+    "/lazysearch",
+    "/StressRelief"
+  ]
+
   function getColour() {
     const colour = colours[index];
     index = (index + 1) % colours.length;
     return colour;
+  }
+
+  function getRandomUrl() {
+    const url = urls[Math.floor(Math.random()*urls.length)];
+    console.log(url)
+    return url;
+
   }
 
   return <div className="home-page">
@@ -35,10 +50,15 @@ const HomePage = () => {
       </div>
 
       <h2>"That's a terrible idea... Do it."</h2>
-        <Card link="/isInternetWorking" title="Is your internet working?" colour={getColour()} />
-        <Card link="/thermapp" title="Thermapp" colour={getColour()} />
-        <Card link="/lazysearch" title="Is your internet working?" colour={getColour()} />
-        <Card link="/StressRelief" title="Is your internet working?" colour={getColour()} />
+      {/* </Link> */}
+      <Link to={getRandomUrl()}>
+        <div className="stupid-button">Take me to something <del>dumb</del> genius</div>
+      </Link>
+      <br />
+      <Card link="/isInternetWorking" title="Is your internet working?" colour={getColour()} />
+      <Card link="/thermapp" title="Thermapp" colour={getColour()} />
+      <Card link="/lazysearch" title="Is your internet working?" colour={getColour()} />
+      <Card link="/StressRelief" title="Is your internet working?" colour={getColour()} />
     </div>
 
   </div>;

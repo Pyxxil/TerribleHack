@@ -24,6 +24,22 @@
     height: 170px;
 }
 
+.stupid-button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 340px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.stupid-button:hover {
+    opacity: 0.6;
+    transition: 1s;
+}
+
 a {
     text-decoration: none;
     color: black;
