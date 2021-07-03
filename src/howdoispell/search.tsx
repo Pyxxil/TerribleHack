@@ -11,7 +11,7 @@ const Search = () => {
 
     const handleSubmit = event => {
       if (word in myData) {
-        document.getElementById("status").innerHTML = "<p>eeah, it's correct</p>"
+        document.getElementById("status").innerHTML = "<p>Yeah, it's correct</p>"
         }
       else {
         document.getElementById("status").innerHTML = "<p>Word does not exist</p>"
