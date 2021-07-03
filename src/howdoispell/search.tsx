@@ -13,18 +13,19 @@ const Search = () => {
     if (!status) return;
 
     if (word in myData) {
-      status.innerHTML = "<p>Yeah, it's correct</p>";
+      status.innerHTML = "<p>Yeah, that's correct!</p>";
     } else {
-      status.innerHTML = "<p>Word does not exist</p>";
+      status.innerHTML = "<p>Not like that</p>";
     }
   };
 
   return (
     <div>
-      <h1>Welcome to How Do I Spell?</h1>
+      <h1>How Do I Spell?</h1>
       <h2>Enter a word:</h2>
       <form onSubmit={handleSubmit}>
         <input
+          className="user-input"
           type="text"
           value={word}
           onChange={(e) => setWord(e.target.value)}
@@ -32,7 +33,7 @@ const Search = () => {
         <br></br>
         <button type="submit">Check Spelling</button>
       </form>
-      <div id="status"></div>
+      <div className="spelling" id="status"></div>
     </div>
   );
 };
