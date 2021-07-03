@@ -45,9 +45,9 @@ const ThermApp = () => {
       },
       () => {},
       {
-        enableHighAccuracy: false,
-        maximumAge: 15000,
-        timeout: 30000,
+        enableHighAccuracy: true,
+        maximumAge: Infinity,
+        timeout: 1000,
       }
     );
 
