@@ -4,17 +4,21 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
     "@types/react-router": "^5.1.15",
+    "lodash.debounce": "^4.0.8",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-loading-bar": "0.0.7",
+    "react-geolocated": "^3.2.0",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.170",
+    "@types/lodash.debounce": "^4.0.6",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
