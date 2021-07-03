@@ -26,8 +26,6 @@ const StressRelief = () => {
       }
     }
     setPeople([...people]);
-    console.log(index);
-    console.log(people);
   }
 
   return (
