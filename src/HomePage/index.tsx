@@ -37,8 +37,8 @@ const HomePage = () => {
       <h2>"That's a terrible idea... Do it."</h2>
         <Card link="/isInternetWorking" title="Is your internet working?" colour={getColour()} />
         <Card link="/thermapp" title="Thermapp" colour={getColour()} />
-        <Card link="/lazysearch" title="Is your internet working?" colour={getColour()} />
-        <Card link="/StressRelief" title="Is your internet working?" colour={getColour()} />
+        <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
+        <Card link="/StressRelief" title="Stress Relief" colour={getColour()} />
     </div>
 
   </div>;
