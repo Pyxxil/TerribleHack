@@ -1,6 +1,5 @@
 import React, { FormEvent, useState } from "react";
 
-import myData from "./words_dictionary.json";
 import "./styles.css";
 
 const Search = () => {
@@ -10,11 +9,14 @@ const Search = () => {
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
 
-    if (word in myData) {
-      setStatus("Yeah, that's correct!");
-    } else {
-      setStatus("Not like that");
-    }
+    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`)
+      .then((resp) => {
+        if (resp.status < 400) setStatus("Yeah, that's correct!");
+        else setStatus("Not like that");
+      })
+      .catch(() => {
+        setStatus("Not like that");
+      });
   };
 
   return (
