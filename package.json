@@ -9,9 +9,12 @@
   },
   "dependencies": {
     "@types/react-router": "^5.1.15",
+    "emailjs": "^3.5.0",
+    "emailjs-com": "^3.1.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
