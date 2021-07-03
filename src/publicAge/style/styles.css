@@ -1,4 +1,4 @@
-input[type="text"],
+.age input[type="text"],
 select {
   width: 100%;
   padding: 12px 20px;
@@ -9,7 +9,7 @@ select {
   box-sizing: border-box;
 }
 
-input[type="button"] {
+.age input[type="button"] {
   width: 100%;
   background-color: #4caf50;
   color: white;
@@ -20,7 +20,7 @@ input[type="button"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.age input[type="submit"]:hover {
   background-color: #45a049;
 }
 
