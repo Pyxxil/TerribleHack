@@ -11,9 +11,9 @@ const HomePage = () => {
     "#EA5555",
     "#F39C3C",
     "#ECD03F",
-    "#6EB35E",
-    "#4996C8",
     "#774ED8",
+    "#4996C8",
+    "#6EB35E",
   ];
   let index = 0;
 
