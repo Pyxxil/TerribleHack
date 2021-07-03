@@ -31,7 +31,7 @@ const StressRelief = () => {
     console.log(people)
   }
 
-  return <>
+  return <div className="stress-relief">
     <h1>Welcome to StressRelief!</h1>
     <br></br>
     <div className="container1">
@@ -48,7 +48,7 @@ const StressRelief = () => {
       <a className="button" onClick={fireSomeone}></a>
       <h3 id="fired"></h3>
     </div>
-  </>;
+  </div>;
 };
 
 export default StressRelief;
