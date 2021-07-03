@@ -1,60 +1,62 @@
-html, body {
-    height: 100%;
-    width: 100%;
+.stress-relief {
+  height: 100vh;
+  width: 100vw;
+  background-color: #eee;
+  position: relative;
+  margin: 0;
 }
-body {
-    background-color: #eee;
-    position: relative;
-    margin: 0;
+
+.stress-relief h1 {
+  margin: 0;
+  padding: 20px;
 }
 
 .container1 {
-    height: 300px;
+  height: 275px;
 }
 
 ul li {
-    list-style-type: none;
-    margin-left: -30px;
+  list-style-type: none;
+  margin-left: -30px;
 }
-
 
 .button {
-    box-shadow: 0px 15px 0 20px #352d2d, 0px 40px 0 30px #000;
-    cursor: pointer;
-    background-color: #c0392b;
-    position: absolute;
-    border-radius: 50%;
-    top: 75%;
-    left: 50%;
-    width: 480px;
-    height: 80px;
-    transform: translateX(-50%);
+  box-shadow: 0px 15px 0 20px #352d2d, 0px 40px 0 30px #000;
+  cursor: pointer;
+  background-color: #c0392b;
+  position: absolute;
+  border-radius: 50%;
+  top: 75%;
+  left: 50%;
+  width: 480px;
+  height: 80px;
+  transform: translateX(-50%);
 }
 .button::before {
-    content: '';
-    z-index: 1;
-    border-radius: 50%;
-    background-color: #e74c3c;
-    position: absolute;
-    bottom: 100%;
-    left: 0%;
-    transition: bottom 0.4s;
-    width: 480px;
-    height: 80px;
+  content: "";
+  z-index: 1;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  transition: bottom 0.4s;
+  width: 480px;
+  height: 80px;
 }
 .button::after {
-    content: '';
-    background-color: #c0392b;
-    position: absolute;
-    bottom: 50%;
-    left: 0%;
-    width: 480px;
-    height: 80px;
-    transition: height 0.4s;
+  content: "";
+  background-color: #c0392b;
+  position: absolute;
+  bottom: 50%;
+  left: 0%;
+  width: 480px;
+  height: 80px;
+  transition: height 0.4s;
 }
 .button:active::before {
-    bottom: 10%;
+  bottom: 10%;
 }
 .button:active::after {
-    height: 10%;
+  height: 10%;
 }

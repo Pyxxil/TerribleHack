@@ -1,0 +1,21 @@
+.howDoISpell {
+  height: 100vh;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.howDoISpell h1 {
+  font-size: 5vw;
+  margin: 0;
+  padding: 2vw;
+}
+
+.howDoISpell .user-input {
+  height: 1.5vw;
+  width: 30vw;
+  margin: 2vw 1vw 10vw auto;
+}
+
+.howDoISpell button {
+  margin-top: 10px;
+}
