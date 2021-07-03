@@ -1,0 +1,54 @@
+.home-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: #eee;
+    position: relative;
+    margin: 0;
+}
+
+.home-page h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+.home-container {
+    width: 90%;
+    height: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.teapot {
+    float: left;
+    width: 200px;
+}
+
+.card {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-color: lightblue;
+}
+
+.card:hover {
+    opacity: 0.6;
+    transition: 1s;
+}
+
+@keyframes swing {
+    0%, 100% { transform: rotate(-30deg); }
+    50% { transform: rotate(30deg); }
+}
+
+#sweetlandia {
+    animation: swing 2s infinite ease-in-out;
+}
+
+.event{
+    margin:50px auto;
+    text-align:center;
+}
