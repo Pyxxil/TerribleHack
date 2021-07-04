@@ -25,7 +25,10 @@ const Search: React.FC<SearchProps> = (props) => {
 
   return (
     <>
-      <input
+      <h2 className="enter-destination-text">
+        Enter Destination
+      </h2>
+      <input className="search-bar-destination"
         onChange={(e) => {
           setSearch(e.target.value);
         }}
@@ -33,7 +36,7 @@ const Search: React.FC<SearchProps> = (props) => {
       />
 
       <div>
-        <label htmlFor="destination">Destination</label>
+        {/* <label htmlFor="destination">Enter Destination</label> */}
         <select
           name="Destination"
           id="destination"
