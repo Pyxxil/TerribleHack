@@ -4,6 +4,7 @@ import Teapot from "./teapot.png";
 import Card from "./Card";
 
 import "./index.css";
+
 import { Link } from "react-router-dom";
 
 const urls = [
@@ -20,6 +21,7 @@ const urls = [
   "/qwikmaffs",
   "/makeacronym",
   "/todonelist",
+  "/publicposting",
 ];
 
 const colours = [
@@ -103,6 +105,11 @@ const HomePage = () => {
           title="Find out what an acronym is"
           colour={getColour()}
         />
+        <Card
+          link="/publicposting"
+          title="Password Manager"
+          colour={getColour()}
+        />
         <Card link="/stressrelief" title="Stress Relief" colour={getColour()} />
         <Card
           link="/rubberducky"
@@ -118,7 +125,7 @@ const HomePage = () => {
         <Card link="/hydra" title="Hydra" colour={getColour()} />
         <Card
           link="/todonelist"
-          title="Complete your ToDo List"
+          title="To Done"
           colour={getColour()}
         />
         <br />

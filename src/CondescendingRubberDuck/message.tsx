@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
+import Ducky from "./ducky.png";
+import NiceDucky from "./nice-ducky.png";
 
 const MESSAGES = [
   "That's not how you do it",
@@ -48,6 +50,8 @@ const Search = () => {
   };
 
   return (
+    <div>
+    <img src={isLoading ? NiceDucky : Ducky } />
     <div className="speech-bubble">
       {isLoading ? (
         <div className="message">
@@ -66,7 +70,7 @@ const Search = () => {
           <h1>{message}</h1>
         </div>
       )}
-    </div>
+    </div></div>
   );
 };
 

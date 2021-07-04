@@ -1,11 +1,11 @@
 .lecture-page-main-container {
-    background-color: #4791db;
+    background-color: #708cdf;
+    background-image: linear-gradient(150deg, #708cdf 0%, #6ddbd9 50%, #ffffff 100%);
     height: 100vh;
 }
 
 .wag-button {
     width: 300px;
-    /* margin: auto; */
     font-size: large;
     margin: 10px;
     cursor: pointer;

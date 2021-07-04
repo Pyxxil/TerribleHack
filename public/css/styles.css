@@ -1,0 +1,16 @@
+
+.vertical-horizontal-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bg {
+  background-color: #aee9a4;
+  background-image: linear-gradient(45deg, #aee9a4 0%, #90eaf6 100%);
+  height: 100vh;
+}

@@ -4,14 +4,14 @@ import "./index.css";
 
 const StressRelief = () => {
   const [people, setPeople] = useState([
-    "Levi Delaney",
-    "Kimberley Evans-Parker",
-    "Sunny Feng",
-    "Josh Hill",
-    "Hassaan Mirza",
-    "Kelvin Ngor",
-    "Mat Seto",
-    "Ryan Tan",
+    "Antonio Arellano",
+    "Karla Wyatt",
+    "Wade Heath",
+    "Toney Cherry",
+    "Leonor Mcneil",
+    "Zelma Tate",
+    "Jarvis Ibarra",
+    "Muriel Wilson",
   ]);
 
   const fireSomeone = () => {
@@ -53,3 +53,5 @@ const StressRelief = () => {
 };
 
 export default StressRelief;
+
+

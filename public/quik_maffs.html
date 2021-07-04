@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script>
       function solve() {
         var test = document.getElementById("input_text2").value;
@@ -18,11 +19,17 @@
     </script>
   </head>
   <body>
-    <div>
-      <h2 style="text-align: center">get some qwikk maffs</h2>
-      <input style="margin-left: 40%" id="input_text2" type="text" value="0" />
-      <input type="button" value="quick solve" onclick="solve();" />
-      <p style="width: 100%; text-align: center" id="result">Answer</p>
+    <div class="bg">
+      <div class="vertical-horizontal-center">
+        <h1>Qwik Maffs</h1>
+        <h3>Need fast answers to math questions?</h3>
+        <br />
+        <br />
+        <h2>get some qwikk maffs</h2>
+        <input id="input_text2" type="text" value="0" />
+        <input type="button" value="quick solve" onclick="solve();" />
+        <p style="width: 100%; text-align: center" id="result">Answer</p>
+      </div>
     </div>
   </body>
 </html>
