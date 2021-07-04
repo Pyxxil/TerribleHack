@@ -10,6 +10,7 @@ import LecturerPage from "./Email-Lecturer";
 import Age from "./publicAge";
 import CondescendingRubberDuck from "./CondescendingRubberDuck";
 import howDoISpell from "./howdoispell";
+import IrdStolen from "./irdstolen";
 
 import "./App.css";
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/publicage" component={Age} />
         <Route path="/rubberducky" component={CondescendingRubberDuck} />
         <Route path="/howdoispell" component={howDoISpell} />
+        <Route path="/ismyirdstolen" component={IrdStolen}/>
       </Router>
     </div>
   );
