@@ -19,6 +19,7 @@ const urls = [
   "/symptoms",
   "/qwikmaffs",
   "/makeacronym",
+  "/todonelist",
 ];
 
 const colours = [
@@ -113,6 +114,11 @@ const HomePage = () => {
         <Card
           link="/qwikmaffs"
           title="Test your math skills"
+          colour={getColour()}
+        />
+        <Card
+          link="/todonelist"
+          title="Complete your ToDo List"
           colour={getColour()}
         />
         <br />
