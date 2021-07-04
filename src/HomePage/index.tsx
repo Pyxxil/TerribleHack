@@ -17,7 +17,8 @@ const urls = [
   "/rubberducky",
   "/howdoispell",
   "/symptoms",
-  "/qwikmaffs"
+  "/qwikmaffs",
+  "/makeacronym",
 ];
 
 const colours = [
@@ -45,7 +46,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <h1>Error 418 - I'm a Teapot</h1>
+      <h1>Status Code 418 - I'm a Teapot</h1>
       <div className="home-container">
         <div className="home-container2">
           <section className="event" id="event">
@@ -58,7 +59,7 @@ const HomePage = () => {
               />
             </div>
           </section>
-          <p>
+          <p className="home-description-text">
             The HTTP 418 I'm a teapot client error response code indicates that
             the server refuses to brew coffee because it is, permanently, a
             teapot. A combined coffee/tea pot that is temporarily out of coffee
@@ -100,6 +101,11 @@ const HomePage = () => {
         />
         <Card link="/howdoispell" title="Learn to Spell" colour={getColour()} />
         <Card
+          link="/makeacronym"
+          title="Find out what an acronym is"
+          colour={getColour()}
+        />
+        <Card
           link="/symptoms"
           title="Check your symptoms"
           colour={getColour()}
@@ -109,7 +115,11 @@ const HomePage = () => {
           title="Test your math skills"
           colour={getColour()}
         />
+        <br />
+        <br />
       </div>
+      <br />
+      <br />
     </div>
   );
 };

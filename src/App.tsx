@@ -11,6 +11,7 @@ import Age from "./publicAge";
 import CondescendingRubberDuck from "./CondescendingRubberDuck";
 import howDoISpell from "./howdoispell";
 import toDoneList from "./toDoneList";
+import makeAcronym from "./makeAcronym";
 
 import "./App.css";
 
@@ -25,7 +26,7 @@ function App() {
           render={() => (window.location.href = "/hydra_page.html")}
         />
         <Route
-          path="/sypmtoms"
+          path="/symptoms"
           render={() => (window.location.href = "/symptoms.html")}
         />
         <Route
@@ -40,6 +41,7 @@ function App() {
         <Route path="/rubberducky" component={CondescendingRubberDuck} />
         <Route path="/howdoispell" component={howDoISpell} />
         <Route path="/toDoneList" component={toDoneList} />
+        <Route path="/makeacronym" component={makeAcronym} />
       </Router>
     </div>
   );

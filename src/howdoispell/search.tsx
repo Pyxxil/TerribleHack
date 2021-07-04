@@ -30,7 +30,7 @@ const Search = () => {
           value={word}
           onChange={(e) => setWord(e.target.value)}
         />
-        <br></br>
+        <br />
         <button type="submit">Check Spelling</button>
       </form>
       <div className="spelling" id="status">
