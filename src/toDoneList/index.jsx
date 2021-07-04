@@ -24,6 +24,7 @@ function toDoneList() {
     }
 
     return (
+        <div className="done-container">
       <div className="toDonelist">
           <div className="toDoneheading">
               <h1 className="toDonetitle">To-Done List</h1>
@@ -51,7 +52,7 @@ function toDoneList() {
             
           </div>
           <div className="Doneitems">
-          <h1>Completed Tasks</h1>
+          <h1 className="toDonetitle">Completed Tasks</h1>
           <ul>
                 {items.map((item, index) => (
                     <TodoItem
@@ -64,6 +65,7 @@ function toDoneList() {
                 ))}
             </ul>
           </div>
+      </div>
       </div>
     );
 }
