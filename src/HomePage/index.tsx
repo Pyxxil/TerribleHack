@@ -81,29 +81,32 @@ const HomePage = () => {
           title="Is your internet working?"
           colour={getColour()}
         />
-        <Card link="/thermap" title="Thermap" colour={getColour()} />
-        <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
-        <Card link="/stressrelief" title="Stress Relief" colour={getColour()} />
-        <Card link="/hydra" title="Hydra" colour={getColour()} />
-        <Card
-          link="/emaillecturer"
-          title="Email Lecturer Ditching"
-          colour={getColour()}
-        />
         <Card
           link="/publicage"
-          title="Public Age Calculator"
+          title="Age Calculator"
           colour={getColour()}
         />
         <Card
-          link="/rubberducky"
-          title="Rubber Duck Debugging"
+          link="/emaillecturer"
+          title="Email Lecturer Attendance"
           colour={getColour()}
         />
-        <Card link="/howdoispell" title="Learn to Spell" colour={getColour()} />
+        <Card
+          link="/qwikmaffs"
+          title="Qwik Maffs"
+          colour={getColour()}
+        />
+        <Card link="/howdoispell" title="Spell Check" colour={getColour()} />
+        <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
         <Card
           link="/makeacronym"
           title="Find out what an acronym is"
+          colour={getColour()}
+        />
+        <Card link="/stressrelief" title="Stress Relief" colour={getColour()} />
+        <Card
+          link="/rubberducky"
+          title="Rubber Duck Debugging"
           colour={getColour()}
         />
         <Card
@@ -111,11 +114,8 @@ const HomePage = () => {
           title="Check your symptoms"
           colour={getColour()}
         />
-        <Card
-          link="/qwikmaffs"
-          title="Test your math skills"
-          colour={getColour()}
-        />
+        <Card link="/thermap" title="Thermap" colour={getColour()} />
+        <Card link="/hydra" title="Hydra" colour={getColour()} />
         <Card
           link="/todonelist"
           title="Complete your ToDo List"
