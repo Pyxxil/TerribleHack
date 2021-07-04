@@ -40,7 +40,7 @@ function App() {
         <Route path="/publicage" component={Age} />
         <Route path="/rubberducky" component={CondescendingRubberDuck} />
         <Route path="/howdoispell" component={howDoISpell} />
-        <Route path="/toDoneList" component={toDoneList} />
+        <Route path="/todonelist" component={toDoneList} />
         <Route path="/makeacronym" component={makeAcronym} />
       </Router>
     </div>
