@@ -22,7 +22,7 @@ const HomePage = () => {
     "/thermap",
     "/lazysearch",
     "/StressRelief",
-    "/hydra_page",
+    "/hydra",
     "/EmailLecturer",
     "/publicAge",
     "/rubberducky",
@@ -42,7 +42,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <h1>Error 418 - I'm a Teapot</h1>
+      <h1>Status Code 418 - I'm a Teapot</h1>
       <div className="home-container">
         <div className="home-container2">
           <section className="event" id="event">
@@ -79,7 +79,7 @@ const HomePage = () => {
         <Card link="/thermap" title="Thermap" colour={getColour()} />
         <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
         <Card link="/StressRelief" title="Stress Relief" colour={getColour()} />
-        <Card link="/hydra_page" title="Hydra" colour={getColour()} />
+        <Card link="/hydra" title="Hydra" colour={getColour()} />
         <Card
           link="/EmailLecturer"
           title="Email Lecturer Ditching"

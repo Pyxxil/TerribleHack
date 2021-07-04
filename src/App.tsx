@@ -20,7 +20,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/thermap" component={ThermAp} />
         <Route
-          path="/hydraPage"
+          path="/hydra"
           render={() => (window.location.href = "/hydra_page.html")}
         />
         <Route
