@@ -1,0 +1,30 @@
+.lmgtfy {
+  height: 100vh;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.lmgtfy h1 {
+  font-size: 5vw;
+  margin: 0;
+  padding: 2vw;
+}
+
+.lmgtfy .user-input {
+  height: 1.5vw;
+  width: 30vw;
+  margin: 2vw 1vw 10vw auto;
+}
+
+.lmgtfy a {
+  font-size: 8vw;
+  text-decoration: none;
+}
+
+.lmgtfy button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
