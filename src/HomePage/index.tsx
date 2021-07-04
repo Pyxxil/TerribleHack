@@ -46,7 +46,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <h1>Error 418 - I'm a Teapot</h1>
+      <h1>Status Code 418 - I'm a Teapot</h1>
       <div className="home-container">
         <div className="home-container2">
           <section className="event" id="event">

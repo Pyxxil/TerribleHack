@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
+import "./index.css";
 
 const LecturerPage = () =>{
 
@@ -11,6 +12,7 @@ const LecturerPage = () =>{
     }
 
     function sendEmail(e) {
+      document.getElementById("h1-element").innerHTML = "We sent an email to your lecturer!"
       e.preventDefault();
   
       emailjs.sendForm('service_semhhwo', 'template_id6q8hm', e.target, 'user_bLQYyBsBgDwyW1yacj3na')
@@ -23,26 +25,25 @@ const LecturerPage = () =>{
     }
   
     return (
-      <div  style={{backgroundColor: '#4791db'}}>
-
-      <h1>Welcome to wagging or no wagging?</h1>
-
+      <div className="lecture-page-main-container">
+      
+      <br /><br /><br /><br /><br />
+      <h1>Let your lecturer know you're not coming!</h1>
+      <h3>To wag or not to wag?</h3>
+      <br /><br /><br /><br />
       <h2>Are you attending your lecture today?</h2>
 
-      <h1 id = "h1-element"></h1>
-
-      <h1 id></h1>
+      <form className="contact-form" onSubmit={pushedNo}>
+        <input className="wag-button green" type="submit" value="Attending"/>
+      </form>
 
       <form className="contact-form" onSubmit={sendEmail}>
-        <input type="submit" value="Wag" />
+        <input className="wag-button red" type="submit" value="Not Attending" />
       </form>
 
-      <form className="Contact-form-No" onSubmit={pushedNo}>
-        <input type="submit" value="No Wag"/>
-      </form>
+      <h1 id = "h1-element"></h1>
       
-
-        </div>
+      </div>
       
     );
   }

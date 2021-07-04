@@ -25,7 +25,7 @@ function App() {
           render={() => (window.location.href = "/hydra_page.html")}
         />
         <Route
-          path="/sypmtoms"
+          path="/symptoms"
           render={() => (window.location.href = "/symptoms.html")}
         />
         <Route
