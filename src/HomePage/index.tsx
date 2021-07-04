@@ -22,7 +22,7 @@ const urls = [
   "/makeacronym",
   "/todonelist",
   "/publicposting",
-  "/irdstolen",
+  "/ismyirdstolen",
 ];
 
 const colours = [
@@ -84,28 +84,16 @@ const HomePage = () => {
           title="Is your internet working?"
           colour={getColour()}
         />
-        <Card
-          link="/publicage"
-          title="Age Calculator"
-          colour={getColour()}
-        />
+        <Card link="/publicage" title="Age Calculator" colour={getColour()} />
         <Card
           link="/emaillecturer"
           title="Email Lecturer Attendance"
           colour={getColour()}
         />
-        <Card
-          link="/qwikmaffs"
-          title="Qwik Maffs"
-          colour={getColour()}
-        />
+        <Card link="/qwikmaffs" title="Qwik Maffs" colour={getColour()} />
         <Card link="/howdoispell" title="Spell Check" colour={getColour()} />
         <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
-        <Card
-          link="/makeacronym"
-          title="Acronym Finder"
-          colour={getColour()}
-        />
+        <Card link="/makeacronym" title="Acronym Finder" colour={getColour()} />
         <Card link="/stressrelief" title="Stress Relief" colour={getColour()} />
         <Card
           link="/publicposting"
@@ -113,7 +101,7 @@ const HomePage = () => {
           colour={getColour()}
         />
         <Card
-          link="/irdstolen"
+          link="/ismyirdstolen"
           title="Is my IRD Stolen?"
           colour={getColour()}
         />
@@ -129,11 +117,7 @@ const HomePage = () => {
         />
         <Card link="/thermap" title="Thermap" colour={getColour()} />
         <Card link="/hydra" title="Hydra" colour={getColour()} />
-        <Card
-          link="/todonelist"
-          title="To Done"
-          colour={getColour()}
-        />
+        <Card link="/todonelist" title="To Done" colour={getColour()} />
         <br />
         <br />
       </div>
