@@ -6,29 +6,32 @@ import Card from "./Card";
 import "./index.css";
 import { Link } from "react-router-dom";
 
-const HomePage = () => {
-  const colours = [
-    "#EA5555",
-    "#F39C3C",
-    "#ECD03F",
-    "#774ED8",
-    "#4996C8",
-    "#6EB35E",
-  ];
-  let index = 0;
+const urls = [
+  "/isinternetworking",
+  "/thermap",
+  "/lazysearch",
+  "/stressrelief",
+  "/hydra",
+  "/emaillecturer",
+  "/publicage",
+  "/rubberducky",
+  "/howdoispell",
+  "/symptoms",
+  "/qwikmaffs",
+  "/makeacronym",
+];
 
-  const urls = [
-    "/isInternetWorking",
-    "/thermap",
-    "/lazysearch",
-    "/StressRelief",
-    "/hydra_page",
-    "/EmailLecturer",
-    "/publicAge",
-    "/rubberducky",
-    "/howdoispell",
-    "/makeacronym",
-  ];
+const colours = [
+  "#EA5555",
+  "#F39C3C",
+  "#ECD03F",
+  "#6EB35E",
+  "#4996C8",
+  "#774ED8",
+];
+
+const HomePage = () => {
+  let index = 0;
 
   const getColour = () => {
     const colour = colours[index];
@@ -73,21 +76,21 @@ const HomePage = () => {
         <br />
 
         <Card
-          link="/isInternetWorking"
+          link="/isinternetworking"
           title="Is your internet working?"
           colour={getColour()}
         />
         <Card link="/thermap" title="Thermap" colour={getColour()} />
         <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
-        <Card link="/StressRelief" title="Stress Relief" colour={getColour()} />
-        <Card link="/hydra_page" title="Hydra" colour={getColour()} />
+        <Card link="/stressrelief" title="Stress Relief" colour={getColour()} />
+        <Card link="/hydra" title="Hydra" colour={getColour()} />
         <Card
-          link="/EmailLecturer"
+          link="/emaillecturer"
           title="Email Lecturer Ditching"
           colour={getColour()}
         />
         <Card
-          link="/publicAge"
+          link="/publicage"
           title="Public Age Calculator"
           colour={getColour()}
         />
@@ -100,6 +103,15 @@ const HomePage = () => {
         <Card
           link="/makeacronym"
           title="Find out what an acronym is"
+        />
+        <Card
+          link="/symptoms"
+          title="Check your symptoms"
+          colour={getColour()}
+        />
+        <Card
+          link="/qwikmaffs"
+          title="Test your math skills"
           colour={getColour()}
         />
       </div>
