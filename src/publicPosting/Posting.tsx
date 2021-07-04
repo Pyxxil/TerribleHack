@@ -5,8 +5,13 @@ export default function Posting(){
   const [identity, setIdentity] = useState("");
   const [isWaiting, setIsWaiting] = useState(true);
 
+<<<<<<< HEAD
   const makeTweet = async (email: string, password: string) => {
 
+=======
+  const makeTweet = async () => {
+    
+>>>>>>> 9b59352... anythin1
   }
 
   const onClickHandler = async () => {
