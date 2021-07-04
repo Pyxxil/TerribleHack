@@ -35,7 +35,7 @@ function App() {
         <Route path="/publicAge" component={Age} />
         <Route path="/rubberducky" component={CondescendingRubberDuck} />
         <Route path="/howdoispell" component={howDoISpell} />
-        <Route path="/makeAcronym" component={makeAcronym} />
+        <Route path="/makeacronym" component={makeAcronym} />
       </Router>
     </div>
   );
