@@ -59,7 +59,7 @@ const HomePage = () => {
               />
             </div>
           </section>
-          <p>
+          <p className="home-description-text">
             The HTTP 418 I'm a teapot client error response code indicates that
             the server refuses to brew coffee because it is, permanently, a
             teapot. A combined coffee/tea pot that is temporarily out of coffee
@@ -103,6 +103,7 @@ const HomePage = () => {
         <Card
           link="/makeacronym"
           title="Find out what an acronym is"
+          colour={getColour()}
         />
         <Card
           link="/symptoms"

@@ -15,11 +15,16 @@ body {
     padding-top: 20px;
 }
 
+.home-description-text {
+    font-size: larger;
+    padding: 20px;
+}
+
 .home-container {
     margin: auto;
     margin-top: 0;
     padding-top: 0;
-    width: 75vw;
+    width: 1100px;
 }
 
 .home-container2 {
@@ -60,7 +65,8 @@ a {
     width: 200px;
     height: 200px;
     float: left;
-    background-color: lightblue;
+    background-color: palevioletred;
+    vertical-align: middle;
 }
 
 .card:hover {
