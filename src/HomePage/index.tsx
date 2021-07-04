@@ -22,6 +22,7 @@ const urls = [
   "/makeacronym",
   "/todonelist",
   "/publicposting",
+  "/irdstolen",
 ];
 
 const colours = [
@@ -102,15 +103,20 @@ const HomePage = () => {
         <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
         <Card
           link="/makeacronym"
-          title="Find out what an acronym is"
+          title="Acronym Finder"
           colour={getColour()}
         />
+        <Card link="/stressrelief" title="Stress Relief" colour={getColour()} />
         <Card
           link="/publicposting"
           title="Password Manager"
           colour={getColour()}
         />
-        <Card link="/stressrelief" title="Stress Relief" colour={getColour()} />
+        <Card
+          link="/irdstolen"
+          title="Is my IRD Stolen?"
+          colour={getColour()}
+        />
         <Card
           link="/rubberducky"
           title="Rubber Duck Debugging"
