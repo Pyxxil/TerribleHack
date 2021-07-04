@@ -36,7 +36,7 @@
 
 .ducky .speech-bubble {
   position: relative;
-  background: #00ccff;
+  background: rgb(230, 253, 255);
   border-radius: 0.4em;
   width: 40vw;
   float: right;
@@ -53,7 +53,7 @@
   width: 0;
   height: 0;
   border: 20px solid transparent;
-  border-right-color: #00aabb;
+  border-right-color: rgb(230, 253, 255);
   border-left: 0;
   border-bottom: 0;
   margin-top: -10px;
