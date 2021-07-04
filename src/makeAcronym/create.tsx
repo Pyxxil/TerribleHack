@@ -28,7 +28,7 @@ const Create = () => {
 
   return (
     <div>
-      <h1>What does my Acronym Stand For?</h1>
+      <h1>What does my <br />Acronym Stand For?</h1>
       <h2>Enter an Acronym:</h2>
       <form onSubmit={handleSubmit}>
         <input

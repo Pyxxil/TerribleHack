@@ -31,3 +31,9 @@ select {
   margin-top: auto;
   padding-top: 30px;
 }
+
+.age-container {
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  height: 100vh;
+}
