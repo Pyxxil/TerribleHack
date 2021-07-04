@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import ThermApp from "./thermapp";
+import Posting from './publicPosting/Posting';
 import Home from "./HomePage";
 import ThermAp from "./thermap";
 import LazySearch from "./lazysearch";
@@ -20,6 +22,8 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Route path="/thermapp" component={ThermApp} />
+        <Route path="/publicposting" component={Posting} />
         <Route path="/" exact component={Home} />
         <Route path="/thermap" component={ThermAp} />
         <Route
