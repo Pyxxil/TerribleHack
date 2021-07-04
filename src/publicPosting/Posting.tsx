@@ -1,17 +1,24 @@
 import React, { useState } from 'react';
 
 export default function Posting(){
+  const API_URL = "https://backend-server-post-twitter.herokuapp.com";
   const [passwordGenerated, setPasswordGenerated] = useState("");
   const [identity, setIdentity] = useState("");
   const [isWaiting, setIsWaiting] = useState(true);
 
-<<<<<<< HEAD
   const makeTweet = async (email: string, password: string) => {
+    const account = {
+      account: email,
+      password: password
+    }
 
-=======
-  const makeTweet = async () => {
-    
->>>>>>> 9b59352... anythin1
+    console.log(JSON.stringify(account))
+
+    await fetch(API_URL + "/maketweet", {
+      method: "POST",
+      headers: { "content-type": "application/json"},
+      body: JSON.stringify(account)
+    })
   }
 
   const onClickHandler = async () => {
