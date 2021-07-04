@@ -5,48 +5,136 @@ import Card from "./Card";
 
 import "./index.css";
 
+import { Link } from "react-router-dom";
+
+const urls = [
+  "/isinternetworking",
+  "/thermap",
+  "/lazysearch",
+  "/stressrelief",
+  "/hydra",
+  "/emaillecturer",
+  "/publicage",
+  "/rubberducky",
+  "/howdoispell",
+  "/symptoms",
+  "/qwikmaffs",
+  "/makeacronym",
+  "/todonelist",
+  "/publicposting",
+];
+
+const colours = [
+  "#EA5555",
+  "#F39C3C",
+  "#ECD03F",
+  "#6EB35E",
+  "#4996C8",
+  "#774ED8",
+];
+
 const HomePage = () => {
-  const colours=[
-    "#EA5555", 
-    "#F39C3C", 
-    "#ECD03F", 
-    "#6EB35E", 
-    "#4996C8",
-    "#774ED8"
-  ]
-  const [ index, setIndex ] = useState(0)
+  let index = 0;
 
-  function getColour() {
-    // const colour = colours[index];
-    // console.log(index, colour)
-    setIndex((index + 1) % colours.length);
-    // console.log("mod", (index + 1) % colours.length);
-    // return colour;
-    return index;
-  }
+  const getColour = () => {
+    const colour = colours[index];
+    index = (index + 1) % colours.length;
+    return colour;
+  };
 
-  return <div className="home-page">
-    <h1>Error 418 - I'm a Teapot</h1>
-    <div className='home-container'>
-      <section className='event'  id='event'>
-          <div className='event-content'>
-            <img src={Teapot} alt='SweetLandia' id='sweetlandia' className="teapot" />
+  const getRandomUrl = () => {
+    const url = urls[Math.floor(Math.random() * urls.length)];
+    return url;
+  };
+
+  return (
+    <div className="home-page">
+      <h1>Status Code 418 - I'm a Teapot</h1>
+      <div className="home-container">
+        <div className="home-container2">
+          <section className="event" id="event">
+            <div className="event-content">
+              <img
+                src={Teapot}
+                alt="SweetLandia"
+                id="sweetlandia"
+                className="teapot"
+              />
+            </div>
+          </section>
+          <p className="home-description-text">
+            The HTTP 418 I'm a teapot client error response code indicates that
+            the server refuses to brew coffee because it is, permanently, a
+            teapot. A combined coffee/tea pot that is temporarily out of coffee
+            should instead return 503.{" "}
+          </p>
+        </div>
+
+        <h2>"That's a terrible idea... Do it."</h2>
+        <Link to={getRandomUrl()}>
+          <div className="stupid-button">
+            Take me to something <del>dumb</del> genius
           </div>
-      </section>
-      <p>The HTTP 418 I'm a teapot client error response code indicates that the server refuses to brew coffee because it is, permanently, a teapot. A combined coffee/tea pot that is temporarily out of coffee should instead return 503. </p>
+        </Link>
+        <br />
+
+        <Card
+          link="/isinternetworking"
+          title="Is your internet working?"
+          colour={getColour()}
+        />
+        <Card
+          link="/publicage"
+          title="Age Calculator"
+          colour={getColour()}
+        />
+        <Card
+          link="/emaillecturer"
+          title="Email Lecturer Attendance"
+          colour={getColour()}
+        />
+        <Card
+          link="/qwikmaffs"
+          title="Qwik Maffs"
+          colour={getColour()}
+        />
+        <Card link="/howdoispell" title="Spell Check" colour={getColour()} />
+        <Card link="/lazysearch" title="Lazy Search" colour={getColour()} />
+        <Card
+          link="/makeacronym"
+          title="Find out what an acronym is"
+          colour={getColour()}
+        />
+        <Card
+          link="/publicposting"
+          title="Password Manager"
+          colour={getColour()}
+        />
+        <Card link="/stressrelief" title="Stress Relief" colour={getColour()} />
+        <Card
+          link="/rubberducky"
+          title="Rubber Duck Debugging"
+          colour={getColour()}
+        />
+        <Card
+          link="/symptoms"
+          title="Check your symptoms"
+          colour={getColour()}
+        />
+        <Card link="/thermap" title="Thermap" colour={getColour()} />
+        <Card link="/hydra" title="Hydra" colour={getColour()} />
+        <Card
+          link="/todonelist"
+          title="To Done"
+          colour={getColour()}
+        />
+        <br />
+        <br />
+      </div>
+      <br />
+      <br />
     </div>
-
-    <h2>"That's a terrible idea... Do it."</h2>
-    {/* <Card link="/isInternetWorking" title="Is your internet working?" colour={()=>getColour()} />
-    <Card link="/thermapp" title="Thermapp" colour={()=>getColour()} />
-    <Card link="/lazysearch" title="Is your internet working?" colour={()=>getColour()} />
-    <Card link="/StressRelief" title="Is your internet working?" colour={()=>getColour()} /> */}
-    <Card link="/isInternetWorking" title="Is your internet working?" colour={() => setIndex((index + 1) % 6)} />
-    <Card link="/thermapp" title="Thermapp" colour={() => setIndex((index + 1) % 6)} />
-    <Card link="/lazysearch" title="Is your internet working?" colour={() => setIndex((index + 1) % 6)} />
-    <Card link="/StressRelief" title="Is your internet working?" colour={() => setIndex((index + 1) % 6)} />
-
-  </div>;
+  );
 };
 
 export default HomePage;

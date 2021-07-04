@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      function solve() {
+        var test = document.getElementById("input_text2").value;
+        console.log(test);
+        if (test != "0") {
+          console.log(
+            document.getElementById("input_text2").innerText + " hehehe"
+          );
+          let value2 = Math.random() * 100;
+          numb = value2.toFixed(2);
+          document.getElementById("result").innerText = numb.toString();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <div class="vertical-horizontal-center">
+        <h1>Qwik Maffs</h1>
+        <h3>Need fast answers to math questions?</h3>
+        <br />
+        <br />
+        <h2>get some qwikk maffs</h2>
+        <input id="input_text2" type="text" value="0" />
+        <input type="button" value="quick solve" onclick="solve();" />
+        <p style="width: 100%; text-align: center" id="result">Answer</p>
+      </div>
+    </div>
+  </body>
+</html>
