@@ -1,7 +1,8 @@
 .stress-relief {
   height: 100vh;
   width: 100vw;
-  background-color: #eee;
+  background-color: #708cdf;
+  background-image: linear-gradient(240deg, rgb(0, 140, 255) 0%, pink 100%);
   position: relative;
   margin: 0;
 }

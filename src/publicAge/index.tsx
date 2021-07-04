@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Loading from "react-loading-bar";
+import { CircularProgress, LinearProgress } from '@material-ui/core';
 
 import "react-loading-bar/dist/index.css";
 import "react-loading-bar/dist/index.css";
@@ -25,7 +25,6 @@ const Age = () => {
   return (
     <div className="age-container">
       <div className="age vertical-horizontal-center">
-        <Loading show={show} color="green" />
         <h1>Find out how old everyone your age is</h1>
         <form>
           <label>Enter Your Age</label>
@@ -39,6 +38,9 @@ const Age = () => {
           />
           <input type="button" value="Submit" onClick={onShow} />
         </form>
+        {/* <Loading show={show} color="green" /> */}
+        {show ? <CircularProgress show={show} /> : null}
+        {show ? <LinearProgress show={show} /> : null}
         <h1 id="demo">{demo}</h1>
       </div>
     </div>

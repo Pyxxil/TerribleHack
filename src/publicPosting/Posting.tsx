@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './posting.css';
 
 export default function Posting(){
   const API_URL = "https://backend-server-post-twitter.herokuapp.com";
@@ -6,7 +7,7 @@ export default function Posting(){
   const [identity, setIdentity] = useState("");
   const [isWaiting, setIsWaiting] = useState(true);
 
-  const makeTweet = async (email: string, password: string) => {
+  const makeTweet = async (email: string, password: any) => {
     const account = {
       account: email,
       password: password
@@ -32,11 +33,17 @@ export default function Posting(){
     })
       .then((response) => response.json())
       .then((data: any) => {
-        password = data.pws;
+        password = data.pws[0];
       });
 
     let userInput: any = document.getElementById("identity");
-    userInput = userInput.value;
+    userInput = userInput.value;    
+    password = password.replace(/ /g, "");
+
+    let passwordArr = [password];
+
+    console.log(passwordArr);
+
 
     if (userInput === "") {
       alert("Please enter the email address that will use this password");
@@ -46,21 +53,21 @@ export default function Posting(){
     setIdentity(userInput);
     setPasswordGenerated(password);
     setIsWaiting(false);
-    makeTweet(userInput, password);
+    makeTweet(userInput, passwordArr);
   }
 
   return (
-    <>
-      Enter your email: <input type="text" id = "identity" required />
-      <p><button onClick = {onClickHandler}>Here</button></p>
-
-      {isWaiting ? 
-        <>Waiting for your email and password generation...</> 
-        : 
-        <div>
-          Password generated: <strong>{passwordGenerated}</strong>
-        </div>
-      }
-    </>
+    <div className = "posting-background">
+      <h1 className = "h1-text">Please enter your email: <input className = "email-box" type="text" id = "identity" required /></h1>
+      <div className = "generate-button-div"><p><button className = "generate-button" onClick = {onClickHandler}>Generate Password!</button></p>
+        {isWaiting ? 
+          <>Waiting for your email and password generation...</> 
+          : 
+          <h2>
+            Password generated: <strong>{passwordGenerated}</strong>
+          </h2>
+        }
+      </div>
+    </div>
   );
 }
