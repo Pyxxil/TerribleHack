@@ -10,6 +10,7 @@ import LecturerPage from "./Email-Lecturer";
 import Age from "./publicAge";
 import CondescendingRubberDuck from "./CondescendingRubberDuck";
 import howDoISpell from "./howdoispell";
+import makeAcronym from "./makeAcronym";
 
 import "./App.css";
 
@@ -25,15 +26,20 @@ function App() {
         />
         <Route
           path="/sypmtoms"
-          render={() => (window.location.href = "/SymptomsLetGo/index.html")}
+          render={() => (window.location.href = "/symptoms.html")}
+        />
+        <Route
+          path="/qwikmaffs"
+          render={() => (window.location.href = "/quik_maffs.html")}
         />
         <Route path="/lazysearch" component={LazySearch} />
-        <Route path="/isInternetWorking" component={isInternetWorking} />
-        <Route path="/StressRelief" component={StressRelief} />
-        <Route path="/EmailLecturer" component={LecturerPage} />
-        <Route path="/publicAge" component={Age} />
+        <Route path="/isinternetworking" component={isInternetWorking} />
+        <Route path="/stressrelief" component={StressRelief} />
+        <Route path="/emaillecturer" component={LecturerPage} />
+        <Route path="/publicage" component={Age} />
         <Route path="/rubberducky" component={CondescendingRubberDuck} />
         <Route path="/howdoispell" component={howDoISpell} />
+        <Route path="/makeacronym" component={makeAcronym} />
       </Router>
     </div>
   );
