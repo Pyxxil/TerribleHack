@@ -17,7 +17,8 @@ const urls = [
   "/rubberducky",
   "/howdoispell",
   "/symptoms",
-  "/qwikmaffs"
+  "/qwikmaffs",
+  "/makeacronym",
 ];
 
 const colours = [
@@ -99,6 +100,10 @@ const HomePage = () => {
           colour={getColour()}
         />
         <Card link="/howdoispell" title="Learn to Spell" colour={getColour()} />
+        <Card
+          link="/makeacronym"
+          title="Find out what an acronym is"
+        />
         <Card
           link="/symptoms"
           title="Check your symptoms"
