@@ -23,22 +23,24 @@ const Age = () => {
   };
 
   return (
-    <div className="age">
-      <Loading show={show} color="green" />
-      <h1>Find out how old everyone your age is</h1>
-      <form>
-        <label>Enter Your Age</label>
-        <input
-          type="text"
-          id="age"
-          name="age"
-          placeholder="Your age..."
-          value={age}
-          onChange={(e) => setAge(e.target.value)}
-        />
-        <input type="button" value="Submit" onClick={onShow} />
-      </form>
-      <h1 id="demo">{demo}</h1>
+    <div className="age-container">
+      <div className="age vertical-horizontal-center">
+        <Loading show={show} color="green" />
+        <h1>Find out how old everyone your age is</h1>
+        <form>
+          <label>Enter Your Age</label>
+          <input
+            type="text"
+            id="age"
+            name="age"
+            placeholder="Your age..."
+            value={age}
+            onChange={(e) => setAge(e.target.value)}
+          />
+          <input type="button" value="Submit" onClick={onShow} />
+        </form>
+        <h1 id="demo">{demo}</h1>
+      </div>
     </div>
   );
 };
