@@ -17,6 +17,7 @@ const urls = [
   "/rubberducky",
   "/howdoispell",
   "/symptoms",
+  "/qwikmaffs"
 ];
 
 const colours = [
