@@ -114,7 +114,11 @@ const HomePage = () => {
           title="Test your math skills"
           colour={getColour()}
         />
+        <br />
+        <br />
       </div>
+      <br />
+      <br />
     </div>
   );
 };
