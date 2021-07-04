@@ -118,7 +118,7 @@ const HomePage = () => {
         <Card link="/hydra" title="Hydra" colour={getColour()} />
         <Card
           link="/todonelist"
-          title="Complete your ToDo List"
+          title="To Done"
           colour={getColour()}
         />
         <br />
