@@ -1,5 +1,7 @@
 # TerribleWebsite 
 
+![Terrible Page](./terrible-pyxxilated-studio.png)
+
 TerribleWebsite is a website with multiple 'terrible projects'. Our goal is to have fun developing these websites, that serve no purpose but to make things bad for the user. 
 
 This project was built over the weekend of 02/07/2021 - 04/07-2021, as part of the 2021 [Terrible Ideas Hackathon](https://terriblehack.nz/). 
