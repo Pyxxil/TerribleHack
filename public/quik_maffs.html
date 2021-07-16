@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="icon" href="/favicon.png" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/styles.css" />
     <script>
       function solve() {
-        var test = document.getElementById("input_text2").value;
-        console.log(test);
-        if (test != "0") {
-          console.log(
-            document.getElementById("input_text2").innerText + " hehehe"
-          );
-          let value2 = Math.random() * 100;
-          numb = value2.toFixed(2);
-          document.getElementById("result").innerText = numb.toString();
+        const test = document.getElementById("input_text").value;
+
+        if (test !== "0") {
+          const value = (Math.random() * 100).toFixed(2);
+          document.getElementById("result").innerText = value;
         }
       }
     </script>
@@ -26,7 +25,7 @@
         <br />
         <br />
         <h2>get some qwikk maffs</h2>
-        <input id="input_text2" type="text" value="0" />
+        <input id="input_text" type="text" value="0" />
         <input type="button" value="quick solve" onclick="solve();" />
         <p style="width: 100%; text-align: center" id="result">Answer</p>
       </div>
