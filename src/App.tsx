@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import ThermApp from "./thermapp";
-import Posting from './publicPosting/Posting';
+import Posting from "./publicPosting/Posting";
 import Home from "./HomePage";
 import ThermAp from "./thermap";
 import LazySearch from "./lazysearch";
@@ -28,7 +28,7 @@ function App() {
         <Route path="/thermap" component={ThermAp} />
         <Route
           path="/hydra"
-          render={() => (window.location.href = "/hydra_page.html")}
+          render={() => (window.location.href = "/hydra.html")}
         />
         <Route
           path="/symptoms"
@@ -45,7 +45,7 @@ function App() {
         <Route path="/publicage" component={Age} />
         <Route path="/rubberducky" component={CondescendingRubberDuck} />
         <Route path="/howdoispell" component={howDoISpell} />
-        <Route path="/ismyirdstolen" component={IrdStolen}/>
+        <Route path="/ismyirdstolen" component={IrdStolen} />
         <Route path="/todonelist" component={toDoneList} />
         <Route path="/makeacronym" component={makeAcronym} />
       </Router>
