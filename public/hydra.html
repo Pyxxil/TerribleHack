@@ -16,22 +16,20 @@
     </style>
     <script>
       const spawn = () => {
-        if (document.visibilityState === "hidden") {
-          document.getElementById("spawner").click();
-          document.getElementById("spawner").click();
-        }
+        window.open("/hydra.html");
+        window.open("/hydra.html");
       }
 
-      document.addEventListener("visibilitychange", spawn);
-      window.addEventListener("beforeunload", spawn);
+      document.onvisibilitychange = spawn;
+      document.onclose = spawn;
 
+      window.addEventListener("beforeunload", spawn, false);
+      window.onclose = spawn;
       window.onbeforeunload = spawn;
+
     </script>
   </head>
   <body>
-    <a target="_blank" href="/hydra.html">
-      <button style="visibility: hidden" id="spawner"></button>
-    </a>
     <img src="/img/hydra.png" width="800px" alt="hydra babyyyyyyy" />
   </body>
 </html>
